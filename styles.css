@@ -32,9 +32,7 @@ h1{
     text-align: center;
     
     }
-.result{
-    margin-top: 6em;
-}
+
 .quizdesign {
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
@@ -84,17 +82,27 @@ tbody{
 }
 
 .option {
-    flex: 0 0 40%;  
+    flex: 1 0 40%;  
        /* This sets the flex basis to 48%, allowing two options to fit per row with some spacing */
     
-    margin-left: 10%;
+       margin-left: 3%;
+       margin-top: 2.5%;  /* Adjusted for better spacing */
+      
     
 }
-label ,input[type="text"] , input[type="number"] , input[type="email"] {
+ input[type="text"] , input[type="number"] , input[type="email"] {
     width: 50%;
     height: 20%;
     margin-bottom: 1.5%;
     padding: .8%;
+    
+    
+}
+label{
+    width: 90%;
+    height: 50%;
+    margin:auto;
+    
     
 }
 
@@ -111,6 +119,7 @@ input[type="radio"] + label {
     background-color: rgba(255, 255, 255, 0.2);
     cursor: pointer;
     transition: background-color 0.3s ease;
+   ;
 }
 
 input[type="radio"]:checked + label {
@@ -168,7 +177,7 @@ table {
 }
 
 th, td {
-    padding: 2em;
+    padding: 10px;
     border: 1px solid #ddd;
 }
 
